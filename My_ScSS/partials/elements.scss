@@ -1,0 +1,87 @@
+@import "../mixin";
+@import "../variables";
+
+.border-radius {
+  border-radius: 15px;
+}
+
+#content{
+    float:right;
+    width:760px;
+    background-color:black;
+    background-size: cover;
+    border:7px;
+    @extend  .border-radius; 
+    border-style:solid; 
+    border-color:rgb(46, 86, 124);
+    padding: 1em;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    margin-right:3%;
+    margin-top: 10px;
+  }
+ 
+  #content2{
+    margin-left:12%;
+    width:980px;
+    background-color: #fcfcfc;
+    background-size: cover;
+    border:7px;
+
+    @extend  .border-radius; 
+
+    border-style:solid; 
+    border-color:rgb(46, 86, 124);
+    padding: 1em;
+    padding-bottom: 1px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+  }
+ 
+  
+
+  #side_content{
+    margin-top: 10px;
+    float:left;
+    width:400px;
+    background-color:$content_color;
+    background-size: cover;
+    border:7px; 
+    border-style:solid; 
+    border-color:rgb(46, 86, 124);
+   
+    @extend  .border-radius;
+
+    padding: 2px 15px 0px 15px;
+    margin-left:3%;
+    font-weight: bold;
+  }
+  #side_content {
+
+      ul{
+      list-style: none;
+      padding: 0;
+      }
+  }
+  #side_content {
+
+      li{
+      list-style:none;
+      padding:9px 0 1px 0;
+      border-bottom: 1px dashed white;
+      }
+  }
+  #side_content a,#side_content a:hover{
+    @include text-elements(black,16px,bolder);
+    text-decoration: none;
+  }
+  h4{
+    @include text-elements(white,20px,bolder);
+    padding: 0;
+    padding-top:0px;
+    padding-bottom: 3px;
+    border-bottom:white solid 1px;
+    
+  }

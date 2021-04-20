@@ -1,0 +1,136 @@
+@import "../mixin";
+@import "../variables";
+
+.border-radius {
+  border-radius: 15px;
+}
+
+body{
+    margin:0px;
+    background-color:$side_content_color;
+  }
+  header {
+
+      h1{
+      @include text-elements(white,65px,bolder);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background-image: url();
+      background-color:$content_color;
+      height:85px;
+      margin-bottom: 0px;
+      margin: 0px;
+      }
+  }
+  
+  h3 {
+    @include text-elements(blue,32px,bolder);
+    padding-left: 1%;
+  }
+  
+  .left{
+    float:right;
+    margin-left:1px;
+  }
+  thead{
+    background-color: indianred;
+  }
+  #login{
+    color:black;
+  }
+  footer{
+    margin-top:500px;
+    height:35px;
+    background-color:$content_color;
+    @include text-elements(black,22px,bold);
+    text-align: center;
+  }
+  h5{
+    margin-bottom: 1px;
+  }
+  footer {
+
+      a{
+      margin-top: 1px;
+      @include text-elements(black,22px,bold);
+      text-decoration: none;
+      }
+  }
+  
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  background-color:gray;
+}
+
+.navbar  {
+
+    a{
+    float: left;
+    @include text-elements(white,25px,bolder);
+  
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+}
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown  { 
+
+    .dropbtn{
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    @include text-elements(white,25px,bolder);
+    }
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:rgb(131, 72, 72);
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content  {
+
+      a{
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      }
+  }
+  
+  .dropdown-content  {
+
+    a:hover{
+    background-color: #ddd;
+    }
+  }
+  
+  .dropdown:hover {
+
+    .dropdown-content {
+    display: block;
+    }
+  }
+ 
+  
